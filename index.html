@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Building a survey form</title>
+    <style>
+
+        /* styling form-control class */
+        .form-control{
+            text-align: left;
+            margin-bottom: 25px;
+        }
+        .form-control{
+            display: block;
+            margin-bottom: 25px;
+        }
+        /* styling the stars */
+        .rateing {
+         content: '☆';
+         color: rgb(4, 4, 4);
+         font-size: 1em;
+        }
+        .rateing {
+            content: '★';
+            color: rgb(12, 12, 12);
+        }
+        input:checked + .rateing {
+            content: '★'; 
+            color: white;
+        }
+        .rateing {
+              
+            display: inline-block;  
+            cursor: pointer;  
+            position: relative;  
+            padding-left: 25px;  
+            margin-right: 15px;  
+            font-size: 20px; 
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Rio Mart survey form</h1>
+<!-- create form -->
+    <form id="form">
+
+        <!-- details -->
+       <div class="form-control">
+          <label for="Name" id="label-name">
+            Name
+          </label>
+
+          <!-- input type text -->
+          <input type="text"
+                id="name"
+                placeholder=""/>
+       </div>
+
+       <div class="form-control">
+            <label for="email" id="label-email">
+                Email
+            </label>
+
+            <!-- input type email -->
+            <input type="email"
+                id="email"
+                placeholder=""/>
+       </div>
+
+       <div class="rateing">
+            <p>your Experience</p>
+            <input type="radio" name="needs" id="a1" value="1">
+            <label for="a1"></label>
+            <input type="radio" name="needs" id="a2" value="2">
+            <label for="a2"></label>
+            <input type="radio" name="needs" id="a1" value="3">
+            <label for="a3"></label>
+            <input type="radio" name="needs" id="a1" value="4">
+            <label for="a4"></label>
+            <input type="radio" name="needs" id="a1" value="5">
+            <label for="a5"></label>
+            <p>Overall, how would you rate your Experience with us?</p>
+       </div>
+    </form>
+</body>
+</html>
